@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block stylesheets %}
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='homepage.css') }}">
+{% endblock %}
+
+{% block jumbotron %}
+    <div id = "outerDiv">
+        <div class="jumbotron" id = "homepage">
+            <h1 class="display-4">The Seven Wonders of the Modern World</h1>
+            <p class="lead">Discover mankind's jaw-dropping accomplishments that defined history</p>
+            <hr class="my-4">
+            <p>Learn about all seven wonders!</p>
+            <a href = "explore" class = "btn btn-outline-dark" role="button">Explore</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "info-layout.html" %}
+
+{% block jumbotron %}
+    <div class="jumbotron" id = "machupicchu" align = "middle">
+        <h1 class="display-4">Machu Picchu (Peru)</h1>
+    </div>
+{% endblock %}
+
+{% block h %}
+    Introduction
+{% endblock %}
+
+{% block p1 %}
+    Machu Picchu, an Incan city of sparkling granite precariously perched between 2 towering Andean peaks, is thought by scholars to have been a sacred archaeological center for the nearby Incan capital of Cusco. Built at the peak of the Incan Empire in the mid-1400s, this mountain citadel was later abandoned by the Incas. The site remained unknown except to locals until 1911, when it was rediscovered by archaeologist Hiram Bingham. The site can only be reached by foot, train or helicopter; most visitors visit by train from nearby Cusco.
+{% endblock %}
+
+{% block text %}
+    <div><h class = "topHeader"></h></div>
+    <p2 class = "innerText">
+        Often referred to as the “Lost City of the Incas”, Machu Picchu is located in the Cusco region of Peru.  One of the most impressive ancient sites in the world, Machu Picchu is an icon of the Inca civilisation and, on a Peru vacation, remains the country's most popular tourist destination.
+    </p2>
+    <div><h class = "topHeader"></h></div>
+    <p3 class = "innerText">
+        Machu Picchu was built around 1450 AD, at the height of the Incan Empire.  It is believed that the area was constructed as an estate for Pachacuti, an emperor who ruled from 1438-1472.  The site was abandoned just over 100 years later at the time of the Spanish conquest in 1572.
+    </p3>
+    <div><h class = "topHeader"></h></div>
+    <p4 class = "innerText">
+        Despite settling in nearby Cusco, the Spanish never discovered Machu Picchu and the site eventually became overrun by the surrounding jungle.  American historian Hiram Bingham discovered the site in 1911 and made it known to the outside world.
+    </p4>
+    <div><h class = "topHeader"></h></div>
+    <p5 class = "innerText">
+        In 1981, Peru declared the area an Historical Sanctuary and in 1983, UNESCO named it a World Heritage Site because it served “as a unique testimony to the Inca civilisation”.  In order to conserve the area, entrance restrictions were put in place in 2011, but this has done nothing to diminish Machu Picchu’s immense popularity.  People come from around the world to hike the famous Inca Trail on Peru tours and to come face to face with the past in this magical and iconic site.
+    </p5>
+    <div><h class = "topHeader"></h></div>
+    <p6 class = "innerText">
+        Machu Picchu is one of the world's most famous landmarks. Book one of our Machu Picchu tours today and be awed by this spectacular site. You won't be disappointed.
+    </p6>
+{% endblock%}
+
+{% block sources %}
+    <p class = "source">Data on this page is directly taken from https://www.goway.com/trips/dest/central-and-south-america/cntry/peru/reg/machu-picchu/</p>
+{% endblock %}
+
+{% block commentSection %}
+    <div id = "outerDiv" align = "center">
+        <div class = "innerDiv commentSection" align = "left">
+            <h class = "exampleInputEmail1 innerText subHeader">Comments</h>
+            <ul id = "mpComment" class = "innerText"></ul>
+        </div>
+    </div>
+    <form>
+        <div id = "outerDiv" align = "center">
+            <div class="form-group innerDiv commentSection" align = "left">
+                <label for="exampleFormControlTextarea1" class = "exampleInputEmail1 innerText subHeader">Add a public comment:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder = "Type here"></textarea>
+                <div id = "commentDiv">
+                    <input class = "btn btn-primary mb-2" id = "commentButton" type = "submit" value = "Comment" onclick = "return false;">
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+    <script src = "{{ url_for('static', filename='js-machupicchu.js') }}"></script>
+{% endblock %}

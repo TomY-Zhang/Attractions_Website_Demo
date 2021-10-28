@@ -1,0 +1,57 @@
+.jumbotron {
+  margin-bottom: 20px; }
+
+#greatwall {
+  background-image: url("img-greatwall.jpg"); }
+
+#christ {
+  background-image: url("img-christ.jpg"); }
+
+#machupicchu {
+  background-image: url("img-machupicchu.jpg"); }
+
+#chichenitza {
+  background-image: url("img-chichenitza.jpg"); }
+
+#colosseum {
+  background-image: url("img-colosseum.jpg"); }
+
+#colosseum > .display-4 {
+  color: white; }
+
+#tajmahal {
+  background-image: url("img-tajmahal.jpg"); }
+
+#petra {
+  background-image: url("img-petra.jpg"); }
+
+#petra > .display-4 {
+  color: white; }
+
+#pDiv, .commentSection {
+  width: 600px; }
+
+.subHeader, .pHeader, .topHeader {
+  font-weight: bold; }
+
+.pHeader {
+  font-size: 18px; }
+
+.topHeader {
+  font-size: 25px; }
+
+#pDiv > div {
+  margin-top: 15px;
+  margin-bottom: 5px; }
+
+#commentDiv {
+  margin-top: 10px; }
+
+#commentDiv > a {
+  color: white; }
+
+.source {
+  margin: 10px;
+  font-size: 10px; }
+
+/*# sourceMappingURL=info-layout.css.map */

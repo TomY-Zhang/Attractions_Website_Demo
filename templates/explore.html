@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block stylesheets %}
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='explore.css') }}">
+{% endblock %}
+
+{% block body %}
+    <!-- Create jumbotrons and links to all pages for the seven wonders -->
+    <div class="jumbotron" id = "greatwall">
+        <h1 class="display-4">Great Wall of China (China)</h1>
+        <hr class="my-4">
+        <a href="greatwall" class="btn btn-outline-dark" role="button">Discover</a>
+    </div>
+    <div class="jumbotron" id = "christ">
+        <h1 class="display-4">Christ the Redeemer Statue (Rio de Janeiro)</h1>
+        <hr class="my-4">
+        <a href="christ" class="btn btn-outline-dark" role="button">Discover</a>
+    </div>
+    <div class="jumbotron" id = "machupicchu">
+        <h1 class="display-4">Machu Picchu (Peru)</h1>
+        <hr class="my-4">
+        <a href="machupicchu" class="btn btn-outline-dark" role="button">Discover</a>
+    </div>
+    <div class="jumbotron" id = "chichenitza">
+        <h1 class="display-4">Chichen Itza (Yucatan Peninsula, Mexico)</h1>
+        <hr class="my-4">
+        <a href="chichenitza" class="btn btn-outline-dark" role="button">Discover</a>
+    </div>
+    <div class="jumbotron" id = "colosseum">
+        <h1 class="display-4">The Roman Colosseum (Rome)</h1>
+        <hr class="my-4">
+        <a href="colosseum" class="btn btn-outline-light" role="button">Discover</a>
+    </div>
+    <div class="jumbotron" id = "tajmahal">
+        <h1 class="display-4">Taj Mahal (Agra, India)</h1>
+        <hr class="my-4">
+        <a href="tajmahal" class="btn btn-outline-dark" role="button">Discover</a>
+    </div>
+    <div class="jumbotron" id = "petra">
+        <h1 class="display-4">Petra (Jordan)</h1>
+        <hr class="my-4">
+        <a href="petra" class="btn btn-outline-light" role="button">Discover</a>
+    </div>
+{% endblock %}

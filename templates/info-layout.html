@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block stylesheets %}
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='info-layout.css') }}">
+{% endblock %}
+
+{% block body %}
+    <!-- Create area for lots of text -->
+    <div id = "bodyDiv" align = "middle">
+        <div>
+            <div id = "outerDiv" align = "center">
+                <div id = "pDiv" class = "innerDiv" align = "left">
+                    <div>
+                        <h class = "topHeader">{% block h %}{% endblock %}</h>
+                    </div>
+                    <p1 class = "innerText">{% block p1 %}{% endblock %}</p1>
+                    <!-- More text in body -->
+                    {% block text %}{% endblock %}
+                    {% block sources %}{% endblock %}
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+
+        <!-- Comment section for each page -->
+        {% block commentSection %}{% endblock %}
+    </div>
+{% endblock %}

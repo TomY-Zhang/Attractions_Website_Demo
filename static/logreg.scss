@@ -1,0 +1,28 @@
+#loginHeader, #loginButton, #registerLink
+{
+    margin: 20px;
+}
+h1
+{
+    text-align: center;
+    label, input
+    {
+        font-family: Arial, Sans-serif;
+    }
+}
+html, #divArea
+{
+    background-color: #5b94ef;
+}
+#loginBox
+{
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+    padding: 40px;
+    background-color: white;
+}
+#usernameInput
+{
+    margin: 10px;
+}

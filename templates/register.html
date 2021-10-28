@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Connect to socket.io -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+
+        <link rel = "stylesheet" href = "{{ url_for('static', filename = 'logreg.css') }}">
+
+        <!-- Bootstrap stylesheet and scripts-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    </head>
+    <body>
+        <div id = "divArea" align = "middle">
+            <div id = "loginBox">
+                <div id = "loginHeader">
+                    <h1 class = "display-4" id = "regHead">Register</h1>
+                </div>
+                <h2 id = "messageReg"></h2>
+                <div id = "credentialsTable">
+                    <table id = "inputTable">
+                        <form>
+                            <div id = "emailInput">
+                                <tr>
+                                    <td><label>Email</label></td>
+                                    <td><input autocomplete = "off" type = "text" class = "form-control mr-sm-2" id = "regEmail" placeholder = "Type email here"></td>
+                                </tr>
+                            </div>
+                            <div id = "usernameInput">
+                                <tr>
+                                    <td><label>Username</label></td>
+                                    <td><input autocomplete = "off" type = "text" class = "form-control mr-sm-2" id = "regUser" placeholder = "Type username here"></td>
+                                </tr>
+                            </div>
+                            <div id = "passwordInput">
+                                <tr>
+                                    <td><label>Password</label></td>
+                                    <td><input autocomplete = "off" type = "password" class = "form-control mr-sm-2" id = "regPass" placeholder = "Type password here"></td>
+                                </tr>
+                            </div>
+                        </form>
+                    </table>
+                </div>
+                <div id = "loginButton">
+                    <input id = "regButton"class = "btn btn-outline-info" type="submit" value = "Register">
+                </div>
+                <div id = "registerLink" align = "middle">
+                        <p>Already have an account? <a href = "login">Click here</a> to login</p>
+                </div>
+            </div>
+        </div>
+        <script src = "{{ url_for('static', filename='js-reg.js') }}"></script>
+    </body>
+</html>

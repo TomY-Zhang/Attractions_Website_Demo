@@ -1,0 +1,90 @@
+{% extends "info-layout.html" %}
+
+{% block jumbotron %}
+    <div class="jumbotron" id = "christ" align = "middle">
+        <h1 class="display-4">Christ the Redeemer Statue (Rio de Janeiro)</h1>
+    </div>
+{% endblock %}
+
+{% block h %}
+    Introduction
+{% endblock %}
+
+{% block p1 %}
+    The Art Deco-style Christ the Redeemer statue has been looming over the Brazilians from upon Corcovado mountain in an awe-inspiring state of eternal blessing since 1931. The 130-foot reinforced concrete-and-soapstone statue was designed by Heitor da Silva Costa and cost approximately $250,000 to build - much of the money was raised through donations. The statue has become an easily recognized icon for Rio and Brazil.
+{% endblock %}
+
+{% block text %}
+    <div><h class = "topHeader"></h></div>
+    <p2 class = "innerText">
+        Cristo Redentor (Christ the Redeemer), at an impressive 98 feet high and more than 2,326 feet above sea level, is one of Rio’s – and the world’s – greatest attractions. Standing next to the awesome Christ statue atop Rio’s Corcovado Mountain, gazing up at the monument and then out over Guanabara Bay is sure a thrill, but getting there can also be part of the adventure.
+    </p2>
+    <div><h class = "topHeader"></h></div>
+    <p3 class = "innerText">
+        Visitors can reach the statue in three different ways; by tram, by car, or by foot. Perhaps the most popular and accessible way to get there is the twenty-minute tram ride that winds through the Tijuca forest and up to summit.
+    </p3>
+    <div><h class = "topHeader"></h></div>
+    <p4 class = "innerText">
+        The tram leaves from the station on Rua Cosme Velho every half hour, between 8:30 AM and 7PM, every day of the week. To reach the tram station, many use the Integraçao Metro ticket, and take the metro bus from Largo do Macho Metro Station (between the Flamengo and Catete stops).
+    </p4>
+    <div><h class = "topHeader"></h></div>
+    <p5 class = "innerText">
+        Once there, the price for adults is R$43, for children R$21.50 (children under six go for free), includes the round trip transportation and access to the Christ the Redeemer monument.
+    </p5>
+    <div><h class = "topHeader"></h></div>
+    <p6 class = "innerText">
+        Visitors short on time might consider going by car, or taking a taxi and arranging for the taxi driver to wait while they tour the monument. Prices for a taxi ride to the Christ depend on the starting point, but are not too expensive. For example, a trip from Ipanema takes about fifteen minutes and should cost around R$20.
+    </p6>
+    <div><h class = "topHeader"></h></div>
+    <p7 class = "innerText">
+        For active tourists wanting to experience the Tijuca forest and climb up the Corcovado on their own two feet, there are several hiking trails up to the monument. RioXtreme offers a two and a half hour hiking tour of Cristo Redentor starting from Parque Lage in Jardin Botanico.
+    </p7>
+    <div><h class = "topHeader"></h></div>
+    <p8 class = "innerText">
+        The hike provides beautiful scenery of the Tijuca National Forest, stops at several waterfalls, and the potential spotting of some Capuchin monkeys. Robberies on the trail rare but do happen, so avoid bringing excess valuables, and since 2008 even hikers have to pay to enter the stature area at the top, which is R$12.
+    </p8>
+    <div><h class = "topHeader"></h></div>
+    <p9 class = "innerText">
+        For tourists who prefer not to worry about the details, most hostels in Rio provide tours around the city. Lemon Spirit, a hostel in Leblon, suggests a six hour city tour (Christ, Sugarloaf, Maracana and beaches included) for R$150 per person.
+    </p9>
+    <p10 class = "innerText">
+        “This tour is among the most requested in Rio’s hostels. You don’t pay as much as if you did the visits by yourself, plus you are provided with a guide,” says José Maria Marçal, who works at the hostel.
+    </p10>
+    <div><h class = "topHeader"></h></div>
+    <p11 class = "innerText">
+        Once arrived, visitors can stand in awe of the legendary figure, which has kept an eye on the Cidade Maravilhosa for the last eighty years since its inauguration in 1931. In 2007, Christ the Redeemer was voted one of the Seven Wonders of the World, and receives well over two million eager visitors each year.
+    </p11>
+    <div><h class = "topHeader"></h></div>
+    <p12 class = "innerText">
+        Also in 2010, Cristo Redentor underwent over R$7 million in of restoration to protect this world wonder from mother nature’s heavy rains and lightening storms. This four-month long renovation included repairing exterior wear and tear, applying a cathodic outer covering to protect against corrosion, replacing lightening rods inside the statue, as well as general cleaning to make the statue lighter.
+    </p12>
+{% endblock %}
+
+{% block sources %}
+    <p class = "source">Data on this page is directly taken from http://riotimesonline.com/brazil-news/rio-travel/a-visit-to-christ-the-redeemer-in-rio/</p>
+{% endblock %}
+
+{% block commentSection %}
+    <div id = "outerDiv" align = "center">
+        <div class = "innerDiv commentSection" align = "left">
+            <h class = "exampleInputEmail1 innerText subHeader">Comments</h>
+            <ul id = "christComment" class = "innerText"></ul>
+        </div>
+    </div>
+    <form>
+        <div id = "outerDiv" align = "center">
+            <div class="form-group innerDiv commentSection" align = "left">
+                <label for="exampleFormControlTextarea1" class = "exampleInputEmail1 innerText subHeader">Add a public comment:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder = "Type here"></textarea>
+                <div id = "commentDiv">
+                    <input class = "btn btn-primary mb-2" id = "commentButton" type = "submit" value = "Comment" onclick = "return false;">
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}
+
+{% block scripts %}
+    <script src = "{{ url_for('static', filename='js-christ.js') }}"></script>
+{% endblock %}
+
